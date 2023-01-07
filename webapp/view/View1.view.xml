@@ -1,0 +1,36 @@
+<mvc:View controllerName="project1.controller.View1" xmlns:mvc="sap.ui.core.mvc" displayBlock="true" xmlns="sap.m">
+    <Page id="page" title="{i18n>title}" titleAlignment="Center">
+        <content>
+            <Table headerText="Sales Records:-" id="Tab1" items="{model1>/results}" sticky="ColumnHeaders,HeaderToolbar" alternateRowColors="true">
+                <columns>
+                    <Column>
+                        <Text text="CategoryID" />
+                    </Column>
+
+                    <Column>
+                        <Text text="CategoryName" />
+                    </Column>
+
+                    <Column>
+                        <Text text="ProductName" />
+                    </Column>
+
+                    <Column>
+                        <Text text="ProductSales" />
+                    </Column>
+                </columns>
+
+                <items>
+                    <ColumnListItem type="Active" id="col1" press="onLoadDialog">
+                        <cells>
+                            <Text text="{model1>CategoryID}" />
+                            <Text text="{model1>CategoryName}" />
+                            <Text text="{model1>ProductName}" />
+                            <Text text="{model1>ProductSales}" />
+                        </cells>
+                    </ColumnListItem>
+                </items>
+            </Table>
+        </content>
+    </Page>
+</mvc:View>

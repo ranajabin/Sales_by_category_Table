@@ -1,0 +1,44 @@
+/* Enter your custom styles here */
+.sapUiForm .sapUiFormTitle {
+    font-weight: bolder;
+    color: #0073ed;
+    height: 3rem;
+    line-height: 3rem;
+}
+
+.sapMLabel {
+    color: #e1a21b;
+    font-size: 1rem;
+    box-sizing: border-box;
+}
+
+.sapMBtnBack,
+.sapMBtnTransparent {
+    background-color: transparent;
+    border-color: transparent;
+    color: #0011d9;
+}
+
+.sapMBtnBack,
+.sapMBtnTransparent {
+    background-color: #e5ef55;
+    border-color: #0d5bad;
+    color: #0011d9;
+}
+
+.sapMTableTH {
+    background: #c1eb18;
+    border-bottom: 2.5px solid #1565c3;
+    vertical-align: middle;
+}
+
+.sapMListHdrText {
+    box-sizing: border-box;
+    font-size: 1.5rem;
+    color: #d91bd3;
+    height: 3rem;
+    line-height: 3rem;
+    padding: 0 1rem;
+    background-color: #fff;
+    border-bottom: 2px solid #1969b3;
+}

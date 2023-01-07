@@ -1,0 +1,48 @@
+<core:FragmentDefinition xmlns="sap.m" xmlns:core="sap.ui.core" xmlns:f="sap.ui.layout.form" xmlns:mvc="sap.ui.core.mvc" xmlns:l="sap.ui.layout">
+    <Dialog id="idDialog">
+        <content>
+            <Panel id="orderdetails" headerText="" class="sapUiResponsiveMargin" width="auto">
+                <f:SimpleForm
+                    id="SimpleForm"
+                    backgroundDesign="Translucent"
+                    editable="true"
+                    layout="ResponsiveGridLayout"
+                    title="Sales Record:"
+                    labelSpanXL="4"
+                    labelSpanL="4"
+                    labelSpanM="12"
+                    labelSpanS="12"
+                    adjustLabelSpan="false"
+                    emptySpanXL="0"
+                    emptySpanL="0"
+                    emptySpanM="0"
+                    emptySpanS="0"
+                    columnsXL="2"
+                    columnsL="2"
+                    columnsM="2"
+                    width="100%"
+                    singleContainerFullSize="false"
+                >
+                    <f:content>
+                        <Label text="CategoryID" />
+                        <Text text="{oModel3>/0/CategoryID}" />
+
+                        <Label text="CategoryName" />
+                        <Text text="{oModel3>/0/CategoryName}" />
+
+                        <Label text="ProductName" />
+                        <Text text="{oModel3>/0/ProductName}" />
+
+                        <Label text="ProductSales" />
+                        <Text text="{oModel3>/0/ProductSales}" />
+                    </f:content>
+                </f:SimpleForm>
+            </Panel>
+
+            <HBox justifyContent="End" alignItems="Start">
+                <Button type="Transparent" text="ok" press="okpress" />
+                <Button type="Transparent" text="cancel" press="cancelpress" />
+            </HBox>
+        </content>
+    </Dialog>
+</core:FragmentDefinition>
